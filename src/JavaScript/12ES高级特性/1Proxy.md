@@ -1,6 +1,7 @@
 ---
 title: Proxy
 order: 1
+article: false
 tag:
   - JavaScript
 ---

@@ -1,6 +1,7 @@
 ---
 title: Web Storage
 order: 2
+article: false
 tag:
   - JavaScript
 ---

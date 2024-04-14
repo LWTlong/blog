@@ -1,9 +1,10 @@
 ---
 title: uni-app
 index: false
+article: false
 ---
 
-uni-app 是一款跨端框架。我这里主要是针对小程序的学习。保姆式教程，从安装到创建项目。
+uni-app 是一款跨端框架。
 
 ## 语言特性
 

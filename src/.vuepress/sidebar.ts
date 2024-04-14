@@ -5,6 +5,7 @@ export default sidebar({
   '/vue/': 'structure',
   '/设计模式/': 'structure',
   '/nodejs/': 'structure',
+  '/koa2/': 'structure',
   // '/uni-app/': 'structure',
   // '/': [
   //   '',

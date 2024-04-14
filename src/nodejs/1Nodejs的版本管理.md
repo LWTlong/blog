@@ -2,6 +2,8 @@
 title: Nodejs 的版本管理
 order: 1
 article: false
+category:
+  - Nodejs
 tag:
   - Nodejs
 ---

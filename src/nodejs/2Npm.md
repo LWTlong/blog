@@ -2,6 +2,8 @@
 title: Npm
 order: 2
 article: false
+category:
+  - Nodejs
 tag:
   - Nodejs
 ---

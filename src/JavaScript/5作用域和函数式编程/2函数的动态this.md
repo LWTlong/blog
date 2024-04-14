@@ -1,6 +1,7 @@
 ---
 title: 函数的动态 this
 order: 2
+article: false
 tag:
   - JavaScript
 ---

@@ -1,6 +1,7 @@
 ---
 title: DOM 事件
 order: 5
+article: false
 tag:
   - JavaScript
 ---

@@ -1,6 +1,7 @@
 ---
 title: Location 对象简介
 order: 2
+article: false
 tag:
   - JavaScript
 ---

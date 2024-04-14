@@ -19,6 +19,10 @@ export default navbar([
     text: 'Nodejs',
     link: '/nodejs/',
   },
+  {
+    text: 'Koa2',
+    link: '/koa2/',
+  },
   // {
   //   text: 'uni-app',
   //   link: '/uni-app/',
