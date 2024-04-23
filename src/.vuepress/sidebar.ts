@@ -6,6 +6,7 @@ export default sidebar({
   '/设计模式/': 'structure',
   '/nodejs/': 'structure',
   '/koa2/': 'structure',
+  '/服务器相关/': 'structure',
   // '/uni-app/': 'structure',
   // '/': [
   //   '',
