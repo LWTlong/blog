@@ -7,7 +7,8 @@ title: 博客主页
 heroText: halo，王牌
 heroFullScreen: true
 tagline: 有为青年
-bgImage: assets/images/home-banner.jpg
+bgImage: /assets/images/home-banner.jpg
+bgImageDark: /assets/images/home-banner.jpg
 projects:
   # - icon: project
   #   name: 项目名称

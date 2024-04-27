@@ -6,6 +6,8 @@ export default sidebar({
   '/设计模式/': 'structure',
   '/nodejs/': 'structure',
   '/koa2/': 'structure',
+  '/egg/': 'structure',
+  '/mongodb/': 'structure',
   '/服务器相关/': 'structure',
   // '/uni-app/': 'structure',
   // '/': [

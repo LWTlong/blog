@@ -21,6 +21,7 @@ export default hopeTheme(
 
     logo: 'assets/images/logo.jpg',
 
+
     // repo: 'vuepress-theme-hope/vuepress-theme-hope',
 
     docsDir: 'src',
@@ -78,14 +79,18 @@ export default hopeTheme(
         components: ['Badge', 'VPCard'],
       },
 
+        git: {
+            createdTime: false,
+            updatedTime: false,
+            contributors: false
+        },
       // 此处开启了很多功能用于演示，你应仅保留用到的功能。
       mdEnhance: {
         alert: true,
         align: true,
-        attrs: true,
-        codetabs: true,
+        codetabs: false,
         component: true,
-        demo: true,
+        demo: false,
         figure: true,
         imgLazyload: true,
         imgSize: true,
@@ -205,6 +210,5 @@ export default hopeTheme(
       //   },
       // },
     },
-  },
-  { custom: true }
+  }
 );

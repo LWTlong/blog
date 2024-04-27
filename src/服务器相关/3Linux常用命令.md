@@ -41,6 +41,22 @@ tag:
 scp ./package.json user@127.0.0.1:/root/test-dir
 ```
 
+如果是上传一个文件夹
+
+```shell
+scp -r dist user@host:/home/
+```
+
+这样会上传整个 dist 文件夹上去。
+
+如果你不是 root 用户，需要先看看有没有权限，并且如果设置了权限，可以设置用户文件夹的权限
+
+登录云服务器，使用 root 权限，给你的用户设置可以操作的文件夹。
+
+```shell
+chown -R username dirname
+```
+
 ### 远程执行命令
 
 远程执行命令 `cd ./test-dir; touch a.txt`

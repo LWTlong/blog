@@ -24,8 +24,12 @@ export default navbar([
     link: '/koa2/',
   },
   {
-    text: 'Koa2',
-    link: '/koa2/',
+    text: 'Egg',
+    link: '/egg/',
+  },
+  {
+    text: 'mongodb',
+    link: '/mongodb/',
   },
   {
     text: '服务器相关',

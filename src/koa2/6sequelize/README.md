@@ -1,9 +1,9 @@
 ---
 title: sequelize
-order: 8
+order: 11
 index: false
 article: false
 dir:
-  order: 8
+  order: 11
 ---
 

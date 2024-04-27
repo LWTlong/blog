@@ -3,10 +3,7 @@ import theme from './theme.js';
 import { getDirname, path } from 'vuepress/utils';
 
 const __dirname = getDirname(import.meta.url);
-console.log(
-  '=================',
-  path.resolve(__dirname, './components/CustomBlogHome.vue')
-);
+
 
 export default defineUserConfig({
   base: '/',

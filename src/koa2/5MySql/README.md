@@ -1,9 +1,9 @@
 ---
 title: MySql
-order: 7
+order: 10
 index: false
 article: false
 dir:
-  order: 7
+  order: 10
 ---
 
