@@ -47,4 +47,4 @@ jobs:
           connect_timeout: 60s
           # 将工作目录下的文件全部拷贝到部署服务器的工作目录
           scp: |
-            ./* => /home/long/webapp/blog/dist
+            ./src/.vuepress/dist/* => /home/long/webapp/blog/dist
