@@ -19,3 +19,14 @@ git branch -M master
 git remote add origin git@仓库地址.git
 git push -u origin master
 ```
+
+如果报：remote origin already exists.
+
+```shell
+# 查看当前远程仓库
+git remote -v
+# 删除远程仓库 重新添加 origin
+git remote remove origin
+# 或者更新 origin
+git remote set-url origin <new-repository-url>
+```
