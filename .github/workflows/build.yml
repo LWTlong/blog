@@ -25,6 +25,7 @@ jobs:
           npm install
           npm run docs:build
           cd src/.vuepress
+          pwd
 
       - name: cp code to Server
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
@@ -37,4 +38,4 @@ jobs:
           connect_timeout: 60s
           # 将工作目录下的文件全部拷贝到部署服务器的工作目录
           scp: |
-            ./dist/* => /home/long/webapp/blog/dist
+            './dist/*' => /home/long/webapp/blog/dist
