@@ -24,7 +24,7 @@ jobs:
           cd ${{ github.workspace }}
           npm install
           npm run docs:build
-          cd src/.vuepress
+          cd src/.vuepress/dist
           pwd
 
       - name: cp code to Server
@@ -33,9 +33,11 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.HOST_USER }}
           pass: ${{ secrets.HOST_PASSWD }}
-
           # 由于网路情况，很容易超时，设置为60s
           connect_timeout: 60s
           # 将工作目录下的文件全部拷贝到部署服务器的工作目录
           scp: |
-            './dist/*' => /home/long/webapp/blog/dist
+            ./* => /home/long/webapp/blog/dist
+          last_ssh: |
+            cd /home/long/webapp/blog/dist
+            ls
