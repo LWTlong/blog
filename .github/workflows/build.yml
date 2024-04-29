@@ -26,13 +26,16 @@ jobs:
           npm run docs:build
 
       - run: |
-          pwd
           cd ${{ github.workspace }}
           pwd
           cd src/
           ls
           pwd
-        
+          cd .vuepress/
+          ls
+          cd dist/
+          ls
+
 #      - name: cp code to Server
 #        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
 #        with:
