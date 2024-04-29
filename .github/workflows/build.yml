@@ -24,6 +24,8 @@ jobs:
           cd ${{ github.workspace }}
           npm install
           npm run docs:build
+          mkdir dist
+          
 
       - name: copy file to server
         uses: appleboy/scp-action@v0.1.7
@@ -31,7 +33,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.HOST_USER }}
           password: ${{ secrets.HOST_PASSWD }}
-          source: ./src/.vuepress/dist/*
+          source: ./dist/*
           target: /home/long/webapp/blog/dist
 
 #      - name: cp code to Server

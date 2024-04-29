@@ -7,7 +7,7 @@ const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: '/',
-
+  dest: path.join(__dirname, '../../dist'),
   lang: 'zh-CN',
   title: '人生何处不青山',
   description: 'vuepress-theme-hope 的博客演示',
