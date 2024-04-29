@@ -25,18 +25,6 @@ jobs:
           npm install
           npm run docs:build
 
-      - run: |
-          cd ${{ github.workspace }}
-          pwd
-          cd src/
-          ls
-          pwd
-          cd .vuepress/
-          ls
-          cd dist/
-          pwd
-          ls
-
       - name: copy file to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -45,7 +33,7 @@ jobs:
           password: ${{ secrets.HOST_PASSWD }}
           source: /home/runner/work/blog/blog/src/.vuepress/dist/*
           target: /home/long/webapp/blog/dist
-          
+
 #      - name: cp code to Server
 #        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
 #        with:
