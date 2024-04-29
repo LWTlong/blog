@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.HOST_USER }}
           password: ${{ secrets.HOST_PASSWD }}
           source: ./dist/*
-          target: /home/long/webapp/blog/dist
+          target: /home/long/webapp/blog
 
 #      - name: cp code to Server
 #        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
