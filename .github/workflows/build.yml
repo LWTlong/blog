@@ -24,8 +24,6 @@ jobs:
           cd ${{ github.workspace }}
           npm install
           npm run docs:build
-          mkdir dist
-          
 
       - name: copy file to server
         uses: appleboy/scp-action@v0.1.7
