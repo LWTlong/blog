@@ -9,3 +9,5 @@ Mongodb 是一个非关系型数据库。
 
 GUI 软件官网也是有提供的， 直接用就好了。
 
+这里主要是以 Nodejs 使用 mongodb 来说明 mongodb 的一些使用方法。 
+
