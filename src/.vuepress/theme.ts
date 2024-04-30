@@ -33,8 +33,10 @@ export default hopeTheme(
     sidebar,
 
     // 页脚
-    footer: '默认页脚',
+    footer: '湘ICP备20009101号',
     displayFooter: true,
+
+    copyright: 'Copyright © 2020-04-30',
 
     // 博客相关
     blog: {
