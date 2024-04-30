@@ -34,14 +34,3 @@ jobs:
           source: ./dist/*
           target: /home/long/webapp/blog
 
-#      - name: cp code to Server
-#        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
-#        with:
-#          host: ${{ secrets.HOST }}
-#          user: ${{ secrets.HOST_USER }}
-#          pass: ${{ secrets.HOST_PASSWD }}
-#          # 由于网路情况，很容易超时，设置为60s
-#          connect_timeout: 60s
-#          # 将工作目录下的文件全部拷贝到部署服务器的工作目录
-#          scp: |
-#            ./src/.vuepress/dist/* => /home/long/webapp/blog/dist
