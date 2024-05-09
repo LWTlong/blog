@@ -32,8 +32,8 @@ export default navbar([
     link: '/mongodb/',
   },
   {
-    text: '服务器相关',
-    link: '/服务器相关/',
+    text: '服务器和自动部署',
+    link: '/服务器和自动部署/',
   },
   // {
   //   text: 'uni-app',
