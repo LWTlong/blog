@@ -8,7 +8,7 @@ export default sidebar({
   '/koa2/': 'structure',
   '/egg/': 'structure',
   '/mongodb/': 'structure',
-  '/服务器相关/': 'structure',
+  '/服务器和自动部署/': 'structure',
   // '/uni-app/': 'structure',
   // '/': [
   //   '',
