@@ -1,6 +1,7 @@
 ---
 title: Mongodb
 index: false
+article: false
 ---
 
 Mongodb 是一个非关系型数据库。

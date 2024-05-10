@@ -28,12 +28,33 @@ export default navbar([
     link: '/egg/',
   },
   {
-    text: 'mongodb',
-    link: '/mongodb/',
+    text: '数据库相关',
+    children: [
+      {
+        text: 'mongodb',
+        link: '/mongodb/'
+      },
+      {
+        text: 'MySql',
+        link: '/MySql/'
+      },
+      {
+        text: 'sequelize',
+        link: '/sequelize/'
+      }
+    ]
+  },
+  {
+    text: 'docker',
+    link: '/docker/',
   },
   {
     text: '服务器和自动部署',
     link: '/服务器和自动部署/',
+  },
+  {
+    text: '杂项',
+    link: '/杂项/',
   },
   // {
   //   text: 'uni-app',

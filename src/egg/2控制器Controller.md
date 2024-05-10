@@ -1,7 +1,7 @@
 ---
 title: 路由、Controller、Service、插件
 order: 2
-article: false
+#article: false
 category:
     - Nodejs
     - egg

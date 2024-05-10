@@ -1,7 +1,7 @@
 ---
 title: egg-mongoose
 order: 6
-article: false
+#article: false
 category:
     - Nodejs
     - egg

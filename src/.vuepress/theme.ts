@@ -13,8 +13,8 @@ export default hopeTheme(
     editLink: false,
 
     author: {
-      name: 'longlong',
-      url: '',
+      name: 'Long',
+      url: 'https://www.anbc.cn',
     },
 
     iconAssets: 'fontawesome-with-brands',
@@ -46,6 +46,7 @@ export default hopeTheme(
       medias: {
         Email: 'mailto:815473953@qq.com',
         Gitee: 'https://gitee.com/longwt',
+        Github: 'https://github.com/LWTlong',
         // Steam: 'https://example.com',
         // Wechat: 'https://example.com',
       },

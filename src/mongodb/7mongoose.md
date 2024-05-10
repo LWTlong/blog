@@ -1,7 +1,7 @@
 ---
 title: mongoose
 order: 7
-article: false
+#article: false
 category:
   - Nodejs
   - mongodb

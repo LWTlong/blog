@@ -1,6 +1,7 @@
 ---
 title: 服务器和自动部署
 index: false
+article: false
 ---
 
 ## 个人云服务器相关。

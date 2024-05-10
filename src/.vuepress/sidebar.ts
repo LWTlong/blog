@@ -8,6 +8,10 @@ export default sidebar({
   '/koa2/': 'structure',
   '/egg/': 'structure',
   '/mongodb/': 'structure',
+  '/MySql/': 'structure',
+  '/sequelize/': 'structure',
+  '/杂项/': 'structure',
+  '/docker/': 'structure',
   '/服务器和自动部署/': 'structure',
   // '/uni-app/': 'structure',
   // '/': [

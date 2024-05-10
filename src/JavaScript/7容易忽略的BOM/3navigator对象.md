@@ -1,7 +1,7 @@
 ---
 title: navigator 对象
 order: 3
-article: false
+#article: false
 tag:
   - JavaScript
 ---

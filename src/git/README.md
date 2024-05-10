@@ -1,6 +1,7 @@
 ---
 title: git
 index: false
+article: false
 ---
 
 git 相关的内容只会记录一些操作少的命令，常用的更新提交就不说了

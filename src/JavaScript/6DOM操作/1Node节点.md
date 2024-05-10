@@ -1,7 +1,7 @@
 ---
 title: DOM 操作的基础了解
 order: 1
-article: false
+#article: false
 tag:
   - JavaScript
 ---

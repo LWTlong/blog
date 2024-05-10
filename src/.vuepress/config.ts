@@ -9,8 +9,8 @@ export default defineUserConfig({
   base: '/',
   dest: path.join(__dirname, '../../dist'),
   lang: 'zh-CN',
-  title: '人生何处不青山',
-  description: 'vuepress-theme-hope 的博客演示',
+  title: 'Long',
+  description: 'Long的前端博客，关于javascript,typescript,vue,nodejs,koa2,egg,mysql,mangodb,sequelize,docker,CI/CD的技术记录和踩坑记录',
 
   theme,
 

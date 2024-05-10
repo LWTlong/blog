@@ -1,7 +1,7 @@
 ---
 title: sequelize-cli
 order: 4
-article: false
+#article: false
 category:
     - koa
     - mysql

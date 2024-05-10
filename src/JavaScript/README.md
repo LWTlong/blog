@@ -1,6 +1,7 @@
 ---
 title: JavaScript
 index: false
+article: false
 ---
 
 # 分类简介

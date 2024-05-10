@@ -1,7 +1,7 @@
 ---
 title: Web Component
 order: 4
-article: false
+#article: false
 tag:
   - JavaScript
 ---

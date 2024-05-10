@@ -1,7 +1,7 @@
 ---
 title: Commonjs 模块化
 order: 3
-article: false
+#article: false
 category:
   - Nodejs
 tag:

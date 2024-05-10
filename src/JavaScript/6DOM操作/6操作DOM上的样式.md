@@ -1,7 +1,7 @@
 ---
 title: 操作DOM上的样式
 order: 6
-article: false
+#article: false
 tag:
   - JavaScript
 ---

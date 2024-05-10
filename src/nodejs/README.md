@@ -1,6 +1,7 @@
 ---
 title: Nodejs
 index: false
+article: false
 ---
 
 Nodejs 是一个开源的，跨平台的 Javascript 运行时环境。

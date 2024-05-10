@@ -1,7 +1,7 @@
 ---
 title: MySql 的概念和简介
 order: 1
-article: false
+#article: false
 category:
   - koa
   - mysql

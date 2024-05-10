@@ -1,6 +1,7 @@
 ---
 title: Koa
 index: false
+article: false
 ---
 
 [Koa](https://www.w3cways.com/doc/koa/) 基于 Node.js 平台的下一代 Web 开发框架。

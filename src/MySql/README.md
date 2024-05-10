@@ -1,9 +1,8 @@
 ---
 title: MySql
-order: 10
 index: false
 article: false
-dir:
-  order: 10
 ---
+
+关于 MySql 的简单介绍。
 

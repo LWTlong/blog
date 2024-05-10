@@ -1,7 +1,7 @@
 ---
 title: 请求和跨域
 order: 2
-article: false
+#article: false
 tag:
   - JavaScript
 ---

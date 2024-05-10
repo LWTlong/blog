@@ -1,6 +1,7 @@
 ---
 title: 杂项
 index: false
+article: false
 ---
 
 # 简介

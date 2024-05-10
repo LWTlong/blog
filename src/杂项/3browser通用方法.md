@@ -1,7 +1,7 @@
 ---
 title: browser 通用方法
 order: 3
-article: false
+#article: false
 category:
   - Nodejs
 tag:

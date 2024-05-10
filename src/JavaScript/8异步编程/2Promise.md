@@ -1,7 +1,7 @@
 ---
 title: Promise
 order: 2
-article: false
+#article: false
 tag:
   - JavaScript
 ---

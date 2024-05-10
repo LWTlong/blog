@@ -9,6 +9,7 @@ heroFullScreen: true
 tagline: 有为青年
 bgImage: /assets/images/home-banner.jpg
 bgImageDark: /assets/images/home-banner.jpg
+roundAvatar: true
 projects:
   # - icon: project
   #   name: 项目名称

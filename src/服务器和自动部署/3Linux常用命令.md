@@ -1,7 +1,7 @@
 ---
 title: Linux 常用命令
 order: 3
-article: false
+#article: false
 category:
   - 云服务器
 tag:
@@ -63,4 +63,24 @@ chown -R username dirname
 
 ```shell
 ssh user@127.0.0.1 "cd ./test-dir; touch a.txt"
+```
+
+## 查看服务
+
+```bash
+# 启动服务
+service [server-name] start
+# 停止服务
+service [server-name] strop
+# 重启服务
+service [server-name] restart
+# 查看状态
+service [server-name] status
+```
+
+## 网络和端口
+
+```bash
+# 查看端口占用情况
+netstat -tulnp
 ```
