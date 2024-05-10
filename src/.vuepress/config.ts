@@ -6,7 +6,7 @@ const __dirname = getDirname(import.meta.url);
 
 
 export default defineUserConfig({
-  base: '/',
+  base: '/blog/',
   dest: path.join(__dirname, '../../dist'),
   lang: 'zh-CN',
   title: 'Long',
