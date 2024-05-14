@@ -8,6 +8,10 @@ export default navbar([
     link: '/JavaScript/',
   },
   {
+    text: 'TypeScript',
+    link: '/typescript/',
+  },
+  {
     text: 'Vue',
     link: '/vue/',
   },
