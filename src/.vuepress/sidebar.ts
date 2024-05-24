@@ -4,6 +4,7 @@ export default sidebar({
   '/JavaScript/': 'structure',
   '/typescript/': 'structure',
   '/vue/': 'structure',
+  '/webpack/': 'structure',
   '/设计模式/': 'structure',
   '/nodejs/': 'structure',
   '/koa2/': 'structure',

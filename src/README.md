@@ -4,9 +4,9 @@ layout: BlogHome
 icon: home
 title: 博客主页
 # heroImage: assets/images/logo.jpg
-heroText: halo，王牌
+heroText: hello， long 
 heroFullScreen: true
-tagline: 有为青年
+tagline: 个人知识库，笔记
 bgImage: /assets/images/home-banner.jpg
 bgImageDark: /assets/images/home-banner.jpg
 roundAvatar: true

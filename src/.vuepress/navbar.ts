@@ -16,6 +16,10 @@ export default navbar([
     link: '/vue/',
   },
   {
+    text: 'webpack',
+    link: '/webpack/',
+  },
+  {
     text: '设计模式',
     link: '/设计模式/',
   },
