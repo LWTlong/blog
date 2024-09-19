@@ -16,6 +16,51 @@ tsconfig.json 配置文件中，一般分为:
 * `extends` - 继承
 
 四个大类，主要是说明一下 compilerOptions 里面的各种常用配置。
+
+## 常用配置
+
+先贴常用配置
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "ESNext"
+    ],
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] 
+    }
+  },
+   "include": [],
+   "exclude": [],
+   "extends": ""
+}
+```
+
+具体介绍下面有👇
  
 ## extends - 继承
 
