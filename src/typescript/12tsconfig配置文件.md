@@ -42,6 +42,7 @@ tsconfig.json 配置文件中，一般分为:
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
+    "esModuleInterop": true,
     "typeRoots": [
       "node_modules/@types"
     ],
