@@ -36,6 +36,10 @@ export default navbar([
     link: '/egg/',
   },
   {
+    text: '性能优化',
+    link: '/性能优化/',
+  },
+  {
     text: '数据库相关',
     children: [
       {

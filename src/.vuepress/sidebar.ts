@@ -9,6 +9,7 @@ export default sidebar({
   '/nodejs/': 'structure',
   '/koa2/': 'structure',
   '/egg/': 'structure',
+  '/性能优化/': 'structure',
   '/mongodb/': 'structure',
   '/MySql/': 'structure',
   '/sequelize/': 'structure',
