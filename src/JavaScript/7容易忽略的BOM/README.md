@@ -1,5 +1,5 @@
 ---
-title: 容易忽略的BOM
+title: BOM
 order: 7
 index: false
 #article: false
