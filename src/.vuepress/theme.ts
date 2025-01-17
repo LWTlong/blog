@@ -5,7 +5,7 @@ import { MR_HOPE_AVATAR } from './logo.js';
 
 export default hopeTheme(
   {
-    hostname: 'http://anbc.cn',
+    hostname: 'https://anbc.cn',
 
     // 深浅色切换
     darkmode: 'toggle',
@@ -17,7 +17,8 @@ export default hopeTheme(
       url: 'https://www.anbc.cn',
     },
 
-    iconAssets: 'fontawesome-with-brands',
+    // 会莫名请求三个 cdn 加载很慢
+    // iconAssets: 'fontawesome-with-brands',
 
     logo: 'assets/images/logo.jpg',
 
@@ -45,7 +46,7 @@ export default hopeTheme(
       intro: '/intro.html',
       medias: {
         Email: 'mailto:815473953@qq.com',
-        Gitee: 'https://gitee.com/longwt',
+        // Gitee: 'https://gitee.com/longwt',
         Github: 'https://github.com/LWTlong',
         // Steam: 'https://example.com',
         // Wechat: 'https://example.com',
