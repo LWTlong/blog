@@ -20,27 +20,37 @@ export default navbar([
     link: '/webpack/',
   },
   {
-    text: '设计模式',
-    link: '/设计模式/',
+    text: 'Nodejs服务',
+    children: [
+      {
+        text: 'Nodejs',
+        link: '/nodejs/',
+      },
+      {
+        text: 'Koa2',
+        link: '/koa2/',
+      },
+      {
+        text: 'Egg',
+        link: '/egg/',
+      },
+    ]
   },
   {
-    text: 'Nodejs',
-    link: '/nodejs/',
+    text: '性能和安全',
+    children: [
+      {
+        text: '性能优化',
+        link: '/性能优化/'
+      },
+      {
+        text: 'web安全',
+        link: '/web安全/'
+      },
+    ]
   },
   {
-    text: 'Koa2',
-    link: '/koa2/',
-  },
-  {
-    text: 'Egg',
-    link: '/egg/',
-  },
-  {
-    text: '性能优化',
-    link: '/性能优化/',
-  },
-  {
-    text: '数据库相关',
+    text: '数据库&服务器',
     children: [
       {
         text: 'mongodb',
@@ -53,16 +63,20 @@ export default navbar([
       {
         text: 'sequelize',
         link: '/sequelize/'
-      }
+      },
+      {
+        text: 'docker',
+        link: '/docker/',
+      },
+      {
+        text: '服务器和自动部署',
+        link: '/服务器和自动部署/',
+      },
     ]
   },
   {
-    text: 'docker',
-    link: '/docker/',
-  },
-  {
-    text: '服务器和自动部署',
-    link: '/服务器和自动部署/',
+    text: '设计模式',
+    link: '/设计模式/',
   },
   {
     text: '杂项',
