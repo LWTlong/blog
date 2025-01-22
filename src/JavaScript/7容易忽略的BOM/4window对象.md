@@ -53,3 +53,106 @@ window.this // undefined
 ...
 
 还有很多，具体的 API 可以参考 MDN 文档 [仅限于安全上下文的特性](https://developer.mozilla.org/zh-CN/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts)
+
+
+**安全的上下文**：
+
+* 当前页面是 https 
+* http 跳转到 https ，也是安全的上下文
+
+**不安全的上下文**：
+
+* 当前页面是 http
+* https 里面使用 iframe 引入了 http 的内容。
+
+>[!important]
+> `http://127.0.0.1` 和 `http://localhost` 会认为是安全的上下文。
+
+
+## 尺寸位置等属性
+
+### screenX/screenY
+
+`screenX` 和 `screenY` 属性返回浏览器窗口相对于屏幕左上角的水平距离和垂直距离。
+
+![](images/screen.png)
+
+
+### 尺寸
+
+`innerWidth` 和 `innerHeight` 属性返回浏览器窗口的视口大小（视口不包括浏览器边框）。
+
+`outerWidth` 和 `outerHeight` 属性返回浏览器窗口的外部大小（包括浏览器边框）。
+
+![](images/size2.png)
+
+
+其他的尺寸属性可以参考：
+
+![](images/size1.png)
+
+
+## print 打印
+
+`window.print` 方法用于打开打印对话框，除了打印功能外，还允许用户更改页面打印的设置。
+
+### 设置打印样式
+
+* `@media print`：这是一个 CSS 媒体查询，用于定义只在打印时生效的样式规则。
+* `page-break-before`、`page-break-after`、`page-break-inside`：这些属性用于控制分页行为。
+* `visibility`、`display`：这些属性可以用于控制元素的可见性和显示方式。
+* `@page`：这是一个 CSS 规则，用于定义打印页面的布局和尺寸。
+* `margin`：这个属性可以用于设置打印页面的边距。
+* `width`、`height`：这些属性可以用于设置打印页面的宽度和高度。
+
+```css 
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 1cm;
+  }
+}
+```
+
+设置打印样式的几种方式：
+
+```css
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  .hidden-print {
+    display: none;
+  }
+}
+```
+
+```html
+<style>
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  .hidden-print {
+    display: none;
+  }
+}
+</style>
+```
+
+```html
+<link rel="stylesheet" href="print.css" media="print">
+```
+
+```css
+@import url("print.css") print;
+```
+
+
+### 控制打印区域
+
+指定打印区域，同样可以用样式控制。
+
+在打印样式里，把不需要打印的样式全部隐藏掉。
