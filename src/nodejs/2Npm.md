@@ -206,3 +206,23 @@ nrm use cnpm
 ```
 
 并且可以执行 `nrm test` 来查看各个源的速度。
+
+## 切换源
+
+npm 切换国内源，一般推线使用淘宝源
+
+```bash 
+npm config set registry https://registry.npmmirror.com
+```
+
+如果在 Mac 上遇到报错，例如 `-13` 的错误，如果按照提示的
+
+```bash
+sudo chown -R 501:20 "Users/用户名/.npm"
+```
+
+如果执行提示的这段话，还是无法解决，可能是 `.npmrc` 这个文件没有权限，npm 无法写入一些 cache 的内容，可以执行
+
+```bash
+sudo chown -R 501:20 "Users/用户名/.npmrc"
+```

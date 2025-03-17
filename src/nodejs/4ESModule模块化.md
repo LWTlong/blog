@@ -160,4 +160,32 @@ export { name } from './a.js';
 import { name: myname } from './a.js';
 ```
 
-其他还有各种各样的导入导出方式结合使用，后续再补。
+
+## 直接在 html 中使用
+
+如果不使用构建工具直接在 html 中使用，需要把 `type` 设置为 `module`
+
+```html
+<script type="module" src="./a.js"></script>
+```
+
+并且，如果是多个模块有引用关系，必须把所有的js文件都在 html 中引入，否则会报错。
+
+```html
+<script type="module" src="./a.js"></script>
+<script type="module" src="./b.js"></script>
+```
+
+并且在 js 文件中，需要加上文件后缀
+
+```javascript
+import { name, sayName } from './a.js';
+```
+
+
+## ESModule 和 CommonJS 的区别
+
+1. ESModule 是静态引入，CommonJS 是动态引入
+2. ESModule 是导出值的引用，CommonJS 是导出值的拷贝
+3. ESModule 支持异步加载，CommonJS 是同步加载的
+

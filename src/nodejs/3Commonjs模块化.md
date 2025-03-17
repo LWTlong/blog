@@ -134,3 +134,68 @@ console.log(__filename);
 console.log(__dirname);
 // D:\arrange\test
 ```
+
+
+## 引入
+
+在 Nodejs 中， Commonjs 的引入原理，实际上是通过 `fs` 模块，读取文件内容，然后通过 `vm` 模块，将文件内容包裹在一个函数里面，然后执行这个函数，最后返回 `module.exports` 的值。
+
+也就是，`require` 的时候，会执行被引入的文件，然后返回 `module.exports` 的值。
+
+就是 `require` 的时候，被引入的文件内容，会被包裹在一个 iife 的自执行函数里面去执行一遍，并且传入 `module`、`exports`、`require`、`__filename`、`__dirname` 这五个参数，然后返回 `module.exports` 的值。
+
+```javascript
+(function (exports, require, module, __filename, __dirname) {
+  // 文件内容
+  // ...
+  return module.exports;
+});
+```
+
+所以在 nodejs 中可以直接的使用 `reuquire`、`module`、`exports`、`__filename`、`__dirname` 这五个变量, 而不需要额外的引入，比如说使用 `fs` 就需要额外的引入，因为在包裹的自执行函数里面并没有传递进来。
+
+并且这个返回值，会被缓存起来，下次再引入的时候，直接从缓存里面读取，不需要再次执行。
+
+`Module Cache Map`: key(module path + module name): module.exports
+
+缓存的 key 是模块路径 + 模块名，因为有可能存在同名模块，所以需要加上模块路径来区分，值就是模块导出的内容。
+
+## 模块导出的作用域
+
+这里需要注意一个点就是，导出的变量，是作为赋值导出的。
+
+例如一个模块 a.js
+```javascript
+let a = 0
+
+setA(v) {
+  a = v
+}
+
+getA() {
+  return a
+}
+
+module.exports = {
+  a,
+  setA,
+  getA
+}
+```
+
+在 b.js 中引入 a.js
+```javascript
+const a = require('./a')
+
+console.log(a.a) // 0
+a.a = 2
+console.log(a.getA()) // 0
+```
+
+在 b.js 中修改 a.a 的值，并不会影响到 a.js 中的 a 的值，因为 a 是一个局部变量，在 a.js 中被赋值导出，在 b.js 中引入的只是 a 的值，并不是 a 的引用，所以修改 a.a 的值，并不会影响到 a.js 中的 a 的值。
+
+## 模块加载顺序
+
+1. 先从缓存中加载
+2. 从文件系统中加载
+3. 从文件系统中加载 node_modules

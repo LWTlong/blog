@@ -4,6 +4,6 @@ index: false
 article: false
 ---
 
-webpack 相关的内容.
+webpack 是一个非常流行的前端打包工具。
 
-貌似升级之后写法会有一些变， 但是大体还是一样的。
+

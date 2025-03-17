@@ -4,23 +4,37 @@ export default navbar([
   '/',
   // '/demo/',
   {
-    text: 'JavaScript',
-    link: '/JavaScript/',
-  },
-  {
-    text: 'TypeScript',
-    link: '/typescript/',
+    text: '基础',
+    children: [
+      {
+        text: 'JavaScript',
+        link: '/JavaScript/',
+      },
+      {
+        text: 'TypeScript',
+        link: '/typescript/',
+      },
+    ]
   },
   {
     text: 'Vue',
     link: '/vue/',
   },
   {
-    text: 'webpack',
-    link: '/webpack/',
+    text: '项目工程',
+    children: [
+      {
+        text: '项目搭建',
+        link: '/项目创建/',
+      },
+      {
+        text: 'webpack',
+        link: '/webpack/',
+      },
+    ]
   },
   {
-    text: 'Nodejs服务',
+    text: 'Node',
     children: [
       {
         text: 'Nodejs',

@@ -57,3 +57,17 @@ nvm use 16.0.0
 ```
 
 使用 `16.0.0` 版本。
+
+
+## nvm 在 mac 
+nvm 在 mac 上有时候会碰到一些无法切换版本的问题
+
+会显示 `nvm default [version]` , 但是使用 `nvm use [version]` 的时候，会发现当前切换了，但是到编辑器里的控制台，node 的版本还是没有被切换成功。
+
+可以直接切换掉默认的版本
+
+```bash 
+nvm alias default v20.3.0
+```
+
+这样可以直接切换默认的版本
