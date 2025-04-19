@@ -87,3 +87,12 @@ const testChinese = ["北京", "上海", "深圳", "广州", "东莞", "惠州"]
 console.log(sortChinese(testChinese));
 // [ '北京', '东莞', '广州', '惠州', '上海', '深圳' ]
 ```
+
+## 使用 Blob 生成 uid
+
+```js
+const blob = new Blob([' ']);
+const url = URL.createObjectURL(blob);
+const uid = url.split('/').pop();
+URL.revokeObjectURL(url);
+```

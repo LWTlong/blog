@@ -31,6 +31,10 @@ export default navbar([
         text: 'webpack',
         link: '/webpack/',
       },
+      {
+        text: '前端监控',
+        link: '/前端监控/',
+      },
     ]
   },
   {

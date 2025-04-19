@@ -11,6 +11,7 @@ export default sidebar({
   '/egg/': 'structure',
   '/性能优化/': 'structure',
   '/项目创建/': 'structure',
+  '/前端监控/': 'structure',
   '/web安全/': 'structure',
   '/mongodb/': 'structure',
   '/MySql/': 'structure',
